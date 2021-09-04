@@ -14,7 +14,7 @@ import java.util.List;
 
 @WebServlet(
         name = "selectlotteryservlet",
-        urlPatterns = {"/SelectLottery"}
+        urlPatterns = "/SelectLottery"
 )
 
 public class SelectLotteryServlet extends HttpServlet {
