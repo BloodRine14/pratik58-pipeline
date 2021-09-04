@@ -4,7 +4,6 @@ import com.pratik58.model.LotteryType;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,7 +13,7 @@ import java.util.List;
 
 public class SelectLotteryServlet extends HttpServlet {
     @Override
-    public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String lotteryType = req.getParameter("Type");
 
         LotteryService mainSystem = new LotteryService();
@@ -24,7 +23,7 @@ public class SelectLotteryServlet extends HttpServlet {
 
         req.setAttribute("lottery", lotteryResult);
         RequestDispatcher view = req.getRequestDispatcher("index.jsp");
-        view.forward(req, res);
+        view.forward(req, resp);
     }
 }
 
