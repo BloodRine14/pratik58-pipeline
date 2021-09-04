@@ -4,4 +4,17 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>lol</servlet-name>
+    <servlet-class>com.pratik58.SelectLotteryServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>lol</servlet-name>
+    <url-pattern>/SelectLottery</url-pattern>
+  </servlet-mapping>
+
 </web-app>
+
+

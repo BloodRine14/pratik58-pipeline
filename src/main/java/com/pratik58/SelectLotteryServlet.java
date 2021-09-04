@@ -12,11 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(
-        name = "selectlotteryservlet",
-        urlPatterns = "/SelectLottery"
-)
-
 public class SelectLotteryServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
