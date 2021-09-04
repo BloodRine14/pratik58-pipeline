@@ -23,7 +23,7 @@
         Result
     </h1>
     <% List result=(List) request.getAttribute("lottery"); Iterator it=result.iterator();
-        out.println("<br>We have <br><br>");
+        out.println("<br> <br><br>");
         while(it.hasNext()){
             out.println(it.next()+"<br>");
         }
