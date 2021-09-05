@@ -1,1 +1,1 @@
-# pratik58-pipeline
+# Maven project deployed on Tomcat
